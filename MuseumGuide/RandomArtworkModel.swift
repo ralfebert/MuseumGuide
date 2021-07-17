@@ -6,19 +6,17 @@ struct NoImageAvailableError: Error {}
 class RandomArtworkModel: ObservableObject {
     let endpoints = MetMuseumEndpoints()
 
-    @Published var artworkResult: AsyncResult<Artwork> = .empty
+    @Published var artworkResult = AsyncResult<Artwork>()
     var artworksSearchResult: ArtworksSearchResult?
 
     func reload() async {
-        if case .inProgress = artworkResult {
-            return
-        }
-        artworkResult = .inProgress
+        if artworkResult.inProgress { return }
+        artworkResult.inProgress = true
 
         do {
-            artworkResult = .success(try await loadRandomArtwork())
+            artworkResult = AsyncResult(value: try await loadRandomArtwork())
         } catch {
-            artworkResult = .failure(error)
+            artworkResult = AsyncResult(error: error)
         }
     }
 
