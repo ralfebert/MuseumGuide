@@ -15,12 +15,12 @@ class RandomArtworkModel: ObservableObject {
 
     func reload() async {
         if artworkResult.inProgress { return }
-        artworkResult.inProgress = true
+        artworkResult.startProgress()
 
         do {
-            artworkResult = AsyncResult(value: try await loadRandomArtwork())
+            artworkResult.finish(value: try await loadRandomArtwork())
         } catch {
-            artworkResult = AsyncResult(error: error)
+            artworkResult.finish(error: error)
         }
     }
 
