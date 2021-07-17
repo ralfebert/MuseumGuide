@@ -26,7 +26,7 @@ class RandomArtworkModel: ObservableObject {
 
     func loadRandomArtwork() async throws -> Artwork {
         if artworksSearchResult == nil {
-            await artworksSearchResult = try endpoints.search(searchText)
+            await artworksSearchResult = try endpoints.search(query: searchText)
         }
 
         guard let objects = artworksSearchResult, let randomObjectId = objects.objectIDs.randomElement() else {

@@ -7,7 +7,7 @@ struct RandomArtworkView: View {
         VStack(spacing: 20) {
             AsyncResultView(result: randomArtworkModel.artworkResult) { artwork in
                 VStack(alignment: .leading) {
-                    if let artworkImageUrl = artwork.primaryImageSmallUrl {
+                    if let artworkImageUrl = artwork.primaryImageSmallURL {
                         AsyncImage(
                             url: artworkImageUrl,
                             content: { image in
@@ -21,7 +21,8 @@ struct RandomArtworkView: View {
                         )
                     }
                     Text(artwork.title)
-                    Text(artwork.artistDisplayName)
+                        .bold()
+                    Text(artwork.artistDisplayName + ", " + artwork.objectDate)
                 }
             }
 
