@@ -31,9 +31,10 @@ See [RandomArtworkModel#L12](MuseumGuide/RandomArtworkModel.swift#L12).
 
 I kept the reload method `async` so it can be used with the new `.refreshable` modifier. But I also update the state in the Model so I always know if something is in progress.
 
-## Discussion
+## Open Questions
 
 I am currently pondering these questions:  
 
 * Is this great or is there a better way to structure this?  
+* SwiftUI's `.refreshable` modifier implies a different structure where the View itself knows the state of the async task and visualizes it. This is very different than the usual approach. Is this a good idea / can it be mixed well with async in the model layer?
 * How can the `RandomArtworkModel#reload` method be generic? (async + MainActor seems to prevent writing this code only once and reusing it)
