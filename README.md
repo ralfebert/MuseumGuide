@@ -24,7 +24,7 @@ This requirement implies that I want to represent "something is in progress" in 
 ## Models
 
 The tricky part seems to be to bring these two worlds together.
-When using Combine, I model the asynchronous task in a separate Model that handles the asynchronous task and knows what state it is in. I adopted this approach for async/await, see [RandomArtworkModel#L16](MuseumGuide/RandomArtworkModel.swift#L16).   
+When using Combine, I handle everything related to the the asynchronous task in a separate Model class that knows what state the task is in. I adopted this approach for async/await, see [RandomArtworkModel#L16](MuseumGuide/RandomArtworkModel.swift#L16).   
 
 I kept the reload method `async` so it can be used with the new `.refreshable` modifier. But I also update the state in the Model so I always know if something is in progress.
 
