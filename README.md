@@ -24,9 +24,7 @@ This requirement implies that I want to represent "something is in progress" in 
 ## Models
 
 The tricky part seems to be to bring these two worlds together.
-With Combine I modeled the asynchronous task as a separate Model that handles the asynchronous task and knows what state it is in and I tried to adaopt this approach in the world of async/await.  
-
-See [RandomArtworkModel#L12](MuseumGuide/RandomArtworkModel.swift#L12).   
+When using Combine, I model the asynchronous task in a separate Model that handles the asynchronous task and knows what state it is in. I adopted this approach for async/await, see [RandomArtworkModel#L12](MuseumGuide/RandomArtworkModel.swift#L12).   
 
 I kept the reload method `async` so it can be used with the new `.refreshable` modifier. But I also update the state in the Model so I always know if something is in progress.
 
@@ -35,5 +33,5 @@ I kept the reload method `async` so it can be used with the new `.refreshable` m
 I am currently pondering these questions:  
 
 * Is this great or is there a better way to structure this?  
-* SwiftUI's `.refreshable` modifier implies a different structure where the View itself knows the state of the async task and visualizes it. This is very different than the usual approach. Is this a good idea / can it be mixed well with async in the model layer?
+* SwiftUI's `.refreshable` modifier implies a different structure where the View itself knows the state of the async task and visualizes it. This is very different than usual. Is this a good idea / does it blend well with async in the model layer?
 * How can the `RandomArtworkModel#reload` method be generic? (async + MainActor seems to prevent writing this code only once and reusing it)
