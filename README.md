@@ -34,4 +34,5 @@ I am currently pondering these questions:
 
 * Is this great or is there a better way to structure this?  
 * SwiftUI's `.refreshable` modifier implies a different structure where the View itself knows the state of the async task and visualizes it. This is very different than usual. Is this a good idea / does it blend well with async in the model layer?
+* If the data is already loaded and you reload it, you can either set it to inProgress (with the app not showing the previous result anymore) or keep the current value and update it when finished. What's currently not possible to represent is "show the previous result AND show that it's loading"
 * How can the `RandomArtworkModel#reload` method be generic? (async + MainActor seems to prevent writing this code only once and reusing it)
