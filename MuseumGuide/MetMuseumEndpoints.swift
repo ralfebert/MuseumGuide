@@ -1,7 +1,7 @@
 import Foundation
 import SweetURLRequest
 
-struct ArtworksResult: Codable {
+struct ArtworksSearchResult: Codable {
     var total: Int
     var objectIDs: [Int]
 }
@@ -48,7 +48,7 @@ struct MetMuseumEndpoints {
 
     typealias Id = Int
 
-    func search(_ query: String) async throws -> ArtworksResult {
+    func search(_ query: String) async throws -> ArtworksSearchResult {
         try await request(
             URLRequest(
                 method: .get,
@@ -59,7 +59,7 @@ struct MetMuseumEndpoints {
                     "hasImages": "true",
                 ]
             ),
-            type: ArtworksResult.self
+            type: ArtworksSearchResult.self
         )
     }
 

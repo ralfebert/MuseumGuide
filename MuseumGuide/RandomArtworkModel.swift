@@ -4,10 +4,10 @@ struct NoImageAvailableError: Error {}
 
 @MainActor
 class RandomArtworkModel: ObservableObject {
-    @Published var artworkResult: AsyncResult<Artwork> = .empty
-
-    var objects: ArtworksResult?
     let endpoints = MetMuseumEndpoints()
+
+    @Published var artworkResult: AsyncResult<Artwork> = .empty
+    var artworksSearchResult: ArtworksSearchResult?
 
     func reload() async {
         if case .inProgress = artworkResult {
@@ -23,11 +23,11 @@ class RandomArtworkModel: ObservableObject {
     }
 
     func loadRandomArtwork() async throws -> Artwork {
-        if objects == nil {
-            await self.objects = try endpoints.search("van gogh")
+        if artworksSearchResult == nil {
+            await artworksSearchResult = try endpoints.search("van gogh")
         }
 
-        guard let objects = objects, let randomObjectId = objects.objectIDs.randomElement() else {
+        guard let objects = artworksSearchResult, let randomObjectId = objects.objectIDs.randomElement() else {
             throw NoImageAvailableError()
         }
 
