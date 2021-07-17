@@ -6,7 +6,7 @@ Example project to explore structured concurrency & SwiftUI - shows a random art
 
 ## Endpoints / Service
 
-I define all the endpoint logic (loading, error handling, decoding) as `async` methods in a separate type - here `await` is 🎂 super awesome to pause while the data is loading and then being able to continue with error handling and decoding without dancing around with completion handlers.  
+I define all the endpoint logic (urls, encoding the request, error handling, decoding the response) as `async` methods in a separate type - here `await` is 🎂 super awesome to pause while the data is loading and then being able to continue with error handling and decoding without dancing around with completion handlers.  
 
 I want to stick to Swift/Foundation APIs as much as possible / don't want to introduce a dependency like Alamofire for this. But I use my very minimalistic [SweetURLRequest](https://github.com/ralfebert/SweetURLRequest) package that I have extracted from numerous projects so I don't have to write the same boilerplate code again and again:
 
