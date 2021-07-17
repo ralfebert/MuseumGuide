@@ -1,4 +1,5 @@
 import Foundation
+import SweetURLRequest
 
 struct ArtworksResult: Codable {
     var total: Int

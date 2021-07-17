@@ -1,4 +1,3 @@
-import SweetURLRequest
 import SwiftUI
 
 struct RandomArtworkView: View {
