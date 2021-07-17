@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct RandomArtworkView: View {
-    @StateObject var randomArtworkModel = RandomArtworkModel()
+    @StateObject var randomArtworkModel = RandomArtworkModel(searchText: "van gogh")
 
     var body: some View {
         VStack(spacing: 20) {
