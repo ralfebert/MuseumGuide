@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF11E1FD26F34B3A00CA71EC /* Exhibition+ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */; };
 		BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FE26F34C5200CA71EC /* Exhibition.swift */; };
 		BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */; };
-		BF3D241C26F3468500F8BE6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241B26F3468500F8BE6E /* ContentView.swift */; };
+		BF3D241C26F3468500F8BE6E /* ExhibitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */; };
 		BF3D241E26F3468600F8BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D241D26F3468600F8BE6E /* Assets.xcassets */; };
 		BF3D242126F3468600F8BE6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exhibition+ExampleData.swift"; sourceTree = "<group>"; };
 		BF11E1FE26F34C5200CA71EC /* Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exhibition.swift; sourceTree = "<group>"; };
 		BF3D241626F3468500F8BE6E /* MuseumGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumGuideApp.swift; sourceTree = "<group>"; };
-		BF3D241B26F3468500F8BE6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionsView.swift; sourceTree = "<group>"; };
 		BF3D241D26F3468600F8BE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF3D242226F3468600F8BE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */,
-				BF3D241B26F3468500F8BE6E /* ContentView.swift */,
+				BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */,
 				BF11E1FE26F34C5200CA71EC /* Exhibition.swift */,
 				BF3D241D26F3468600F8BE6E /* Assets.xcassets */,
 				BF3D242226F3468600F8BE6E /* Info.plist */,
@@ -70,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */,
-				BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -144,8 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3D241C26F3468500F8BE6E /* ContentView.swift in Sources */,
-				BF11E1FD26F34B3A00CA71EC /* Exhibition+ExampleData.swift in Sources */,
+				BF3D241C26F3468500F8BE6E /* ExhibitionsView.swift in Sources */,
 				BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */,
 				BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */,
 			);
@@ -205,7 +201,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -279,7 +275,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MuseumGuide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MuseumGuide/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +295,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MuseumGuide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MuseumGuide/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
