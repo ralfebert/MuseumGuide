@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF11E1FD26F34B3A00CA71EC /* Exhibition+ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */; };
+		BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FE26F34C5200CA71EC /* Exhibition.swift */; };
 		BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */; };
 		BF3D241C26F3468500F8BE6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241B26F3468500F8BE6E /* ContentView.swift */; };
 		BF3D241E26F3468600F8BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D241D26F3468600F8BE6E /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exhibition+ExampleData.swift"; sourceTree = "<group>"; };
+		BF11E1FE26F34C5200CA71EC /* Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exhibition.swift; sourceTree = "<group>"; };
 		BF3D241626F3468500F8BE6E /* MuseumGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumGuideApp.swift; sourceTree = "<group>"; };
 		BF3D241B26F3468500F8BE6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			children = (
 				BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */,
 				BF3D241B26F3468500F8BE6E /* ContentView.swift */,
+				BF11E1FE26F34C5200CA71EC /* Exhibition.swift */,
 				BF3D241D26F3468600F8BE6E /* Assets.xcassets */,
 				BF3D242226F3468600F8BE6E /* Info.plist */,
 				BF3D241F26F3468600F8BE6E /* Preview Content */,
@@ -65,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */,
+				BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3D241C26F3468500F8BE6E /* ContentView.swift in Sources */,
+				BF11E1FD26F34B3A00CA71EC /* Exhibition+ExampleData.swift in Sources */,
+				BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */,
 				BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

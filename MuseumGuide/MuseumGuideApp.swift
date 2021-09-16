@@ -1,10 +1,3 @@
-//
-//  MuseumGuideApp.swift
-//  MuseumGuide
-//
-//  Created by Ralf Ebert on 16.09.21.
-//
-
 import SwiftUI
 
 @main
