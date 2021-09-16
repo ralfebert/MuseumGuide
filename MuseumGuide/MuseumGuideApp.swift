@@ -4,7 +4,9 @@ import SwiftUI
 struct MuseumGuideApp: App {
     var body: some Scene {
         WindowGroup {
-            ExhibitionsView()
+            NavigationView {
+                ExhibitionsView()
+            }
         }
     }
 }

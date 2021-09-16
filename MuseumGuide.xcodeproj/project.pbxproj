@@ -12,6 +12,7 @@
 		BF3D241C26F3468500F8BE6E /* ExhibitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */; };
 		BF3D241E26F3468600F8BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D241D26F3468600F8BE6E /* Assets.xcassets */; };
 		BF3D242126F3468600F8BE6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */; };
+		BF9C244D26F35A6D00730E5E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C244C26F35A6D00730E5E /* GalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BF3D241D26F3468600F8BE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF3D242226F3468600F8BE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9C244C26F35A6D00730E5E /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */,
 				BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */,
+				BF9C244C26F35A6D00730E5E /* GalleryView.swift */,
 				BF11E1FE26F34C5200CA71EC /* Exhibition.swift */,
 				BF3D241D26F3468600F8BE6E /* Assets.xcassets */,
 				BF3D242226F3468600F8BE6E /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3D241C26F3468500F8BE6E /* ExhibitionsView.swift in Sources */,
+				BF9C244D26F35A6D00730E5E /* GalleryView.swift in Sources */,
 				BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */,
 				BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */,
 			);

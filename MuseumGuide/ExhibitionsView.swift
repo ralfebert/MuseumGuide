@@ -23,7 +23,14 @@ struct ExhibitionsView: View {
 
     var body: some View {
         List(exhibitionsModel.exhibitions) { exhibition in
-            Text(exhibition.name)
+            NavigationLink(
+                destination: {
+                    GalleryView(artworkSearchModel: ArtworkSearchModel(searchText: exhibition.name))
+                },
+                label: {
+                    Text(exhibition.name)
+                }
+            )
         }
         .task {
             await self.exhibitionsModel.reload()
@@ -31,6 +38,7 @@ struct ExhibitionsView: View {
         .refreshable {
             await self.exhibitionsModel.reload()
         }
+        .navigationTitle("Exhibitions")
     }
 }
 
