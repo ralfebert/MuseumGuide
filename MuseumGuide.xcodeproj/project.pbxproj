@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FE26F34C5200CA71EC /* Exhibition.swift */; };
+		BF320D3A26F37E1A00E51155 /* MetMuseumEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = BF320D3926F37E1A00E51155 /* MetMuseumEndpoints */; };
+		BF320D3D26F3A61400E51155 /* MetMuseumEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = BF320D3C26F3A61400E51155 /* MetMuseumEndpoints */; };
 		BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */; };
 		BF3D241C26F3468500F8BE6E /* ExhibitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */; };
 		BF3D241E26F3468600F8BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D241D26F3468600F8BE6E /* Assets.xcassets */; };
 		BF3D242126F3468600F8BE6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */; };
 		BF9C244D26F35A6D00730E5E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C244C26F35A6D00730E5E /* GalleryView.swift */; };
-		BF9C244F26F36AAE00730E5E /* MetMuseumEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C244E26F36AAE00730E5E /* MetMuseumEndpoints.swift */; };
-		BF9C245226F3785500730E5E /* SweetURLRequest in Frameworks */ = {isa = PBXBuildFile; productRef = BF9C245126F3785500730E5E /* SweetURLRequest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,6 @@
 		BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF3D242226F3468600F8BE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9C244C26F35A6D00730E5E /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
-		BF9C244E26F36AAE00730E5E /* MetMuseumEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMuseumEndpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF9C245226F3785500730E5E /* SweetURLRequest in Frameworks */,
+				BF320D3D26F3A61400E51155 /* MetMuseumEndpoints in Frameworks */,
+				BF320D3A26F37E1A00E51155 /* MetMuseumEndpoints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +46,7 @@
 			children = (
 				BF3D241826F3468500F8BE6E /* MuseumGuide */,
 				BF3D241726F3468500F8BE6E /* Products */,
+				BF9C245426F37D3B00730E5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +68,6 @@
 				BF3D241D26F3468600F8BE6E /* Assets.xcassets */,
 				BF3D242226F3468600F8BE6E /* Info.plist */,
 				BF3D241F26F3468600F8BE6E /* Preview Content */,
-				BF9C244E26F36AAE00730E5E /* MetMuseumEndpoints.swift */,
 			);
 			path = MuseumGuide;
 			sourceTree = "<group>";
@@ -78,6 +78,13 @@
 				BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF9C245426F37D3B00730E5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +104,8 @@
 			);
 			name = MuseumGuide;
 			packageProductDependencies = (
-				BF9C245126F3785500730E5E /* SweetURLRequest */,
+				BF320D3926F37E1A00E51155 /* MetMuseumEndpoints */,
+				BF320D3C26F3A61400E51155 /* MetMuseumEndpoints */,
 			);
 			productName = MuseumGuide;
 			productReference = BF3D241626F3468500F8BE6E /* MuseumGuide.app */;
@@ -127,7 +135,7 @@
 			);
 			mainGroup = BF3D240D26F3468500F8BE6E;
 			packageReferences = (
-				BF9C245026F3785500730E5E /* XCRemoteSwiftPackageReference "SweetURLRequest" */,
+				BF320D3B26F3A61400E51155 /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */,
 			);
 			productRefGroup = BF3D241726F3468500F8BE6E /* Products */;
 			projectDirPath = "";
@@ -159,7 +167,6 @@
 				BF9C244D26F35A6D00730E5E /* GalleryView.swift in Sources */,
 				BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */,
 				BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */,
-				BF9C244F26F36AAE00730E5E /* MetMuseumEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,21 +353,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BF9C245026F3785500730E5E /* XCRemoteSwiftPackageReference "SweetURLRequest" */ = {
+		BF320D3B26F3A61400E51155 /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ralfebert/SweetURLRequest.git";
+			repositoryURL = "https://github.com/ralfebert/MetMuseumEndpoints";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.9;
+				minimumVersion = 0.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BF9C245126F3785500730E5E /* SweetURLRequest */ = {
+		BF320D3926F37E1A00E51155 /* MetMuseumEndpoints */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BF9C245026F3785500730E5E /* XCRemoteSwiftPackageReference "SweetURLRequest" */;
-			productName = SweetURLRequest;
+			productName = MetMuseumEndpoints;
+		};
+		BF320D3C26F3A61400E51155 /* MetMuseumEndpoints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF320D3B26F3A61400E51155 /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */;
+			productName = MetMuseumEndpoints;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

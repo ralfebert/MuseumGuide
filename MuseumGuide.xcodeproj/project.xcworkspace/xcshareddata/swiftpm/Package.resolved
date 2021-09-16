@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "MetMuseumEndpoints",
+        "repositoryURL": "https://github.com/ralfebert/MetMuseumEndpoints",
+        "state": {
+          "branch": null,
+          "revision": "26ff8a12b3d2b08131befadd9daf918cf54fc5b5",
+          "version": "0.0.1"
+        }
+      },
+      {
         "package": "SweetURLRequest",
         "repositoryURL": "https://github.com/ralfebert/SweetURLRequest.git",
         "state": {
