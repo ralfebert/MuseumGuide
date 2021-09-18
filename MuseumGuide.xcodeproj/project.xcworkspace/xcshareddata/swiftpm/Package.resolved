@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "AsyncModel",
+        "repositoryURL": "https://github.com/ralfebert/AsyncModel.git",
+        "state": {
+          "branch": null,
+          "revision": "d6832861c1410ed38c394b7fb9fec7781cc146d3",
+          "version": "0.0.1"
+        }
+      },
+      {
         "package": "MetMuseumEndpoints",
         "repositoryURL": "https://github.com/ralfebert/MetMuseumEndpoints",
         "state": {
