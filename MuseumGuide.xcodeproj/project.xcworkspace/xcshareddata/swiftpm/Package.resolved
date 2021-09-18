@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/ralfebert/MetMuseumEndpoints",
         "state": {
           "branch": null,
-          "revision": "26ff8a12b3d2b08131befadd9daf918cf54fc5b5",
-          "version": "0.0.1"
+          "revision": "f53f4eee195982173c28172d1166e49c0c6ef069",
+          "version": "0.0.2"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/ralfebert/SweetURLRequest.git",
         "state": {
           "branch": null,
-          "revision": "cb01ba8ca24216032933545218333d63c25fc627",
-          "version": "0.1.13"
+          "revision": "68b67b9eec051a729431e442571abcc2c54d3838",
+          "version": "0.1.14"
         }
       }
     ]
