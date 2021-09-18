@@ -24,3 +24,17 @@ class ArtworkSearchModel: AsyncModel<ArtworksSearchResult> {
         try await self.endpoints.search(query: self.searchText)
     }
 }
+
+@MainActor
+class ArtworkModel: AsyncModel<Artwork> {
+    let objectID: Artwork.ID
+    let endpoints = MetMuseumEndpoints()
+
+    init(objectID: Artwork.ID) {
+        self.objectID = objectID
+    }
+
+    override func load() async throws -> Artwork {
+        try await self.endpoints.artwork(id: self.objectID)
+    }
+}

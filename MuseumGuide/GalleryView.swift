@@ -1,26 +1,23 @@
 import AsyncModel
-import MetMuseumEndpoints
 import SwiftUI
 
 struct GalleryView: View {
-    @ObservedObject var artworkSearchModel: ArtworkSearchModel
+    @StateObject var artworkSearchModel: ArtworkSearchModel
 
     var body: some View {
-        VStack {
+        ZStack {
             AsyncResultView(result: artworkSearchModel.result) { searchResult in
-                List(searchResult.objectIDs, id: \.self) { objectID in
-                    Text("\(objectID)")
+                TabView {
+                    ForEach(searchResult.objectIDs, id: \.self) { objectID in
+                        ArtworkView(artworkModel: ArtworkModel(objectID: objectID))
+                    }
                 }
+                .tabViewStyle(.page)
+                .indexViewStyle(.page(backgroundDisplayMode: .always))
             }
         }
         .task {
-            await self.artworkSearchModel.reload()
+            await artworkSearchModel.reload()
         }
-    }
-}
-
-struct ExhibitionView_Previews: PreviewProvider {
-    static var previews: some View {
-        GalleryView(artworkSearchModel: ArtworkSearchModel(searchText: "sunflower"))
     }
 }

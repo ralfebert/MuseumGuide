@@ -1,6 +1,12 @@
 import Foundation
 import SweetURLRequest
 
+struct Exhibition: Identifiable, Codable {
+    var id: Int
+    var name: String
+    var previewImageUrl: URL
+}
+
 struct ExhibitionsEndpoints {
     let baseURL = URL(string: "https://www.ralfebert.de/examples/")!
     let urlSession: URLSession
