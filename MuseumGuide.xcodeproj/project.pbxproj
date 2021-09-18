@@ -18,6 +18,7 @@
 		BFE15B7F26F62E860096F21F /* MuseumGuideModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B7E26F62E860096F21F /* MuseumGuideModels.swift */; };
 		BFE15B8126F62F5F0096F21F /* ExhibitionsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B8026F62F5F0096F21F /* ExhibitionsEndpoints.swift */; };
 		BFE15B8326F632840096F21F /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B8226F632840096F21F /* ArtworkView.swift */; };
+		BFE15B8526F6339F0096F21F /* ExhibitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B8426F6339F0096F21F /* ExhibitionCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BFE15B7E26F62E860096F21F /* MuseumGuideModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumGuideModels.swift; sourceTree = "<group>"; };
 		BFE15B8026F62F5F0096F21F /* ExhibitionsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionsEndpoints.swift; sourceTree = "<group>"; };
 		BFE15B8226F632840096F21F /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
+		BFE15B8426F6339F0096F21F /* ExhibitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				BFE15B8226F632840096F21F /* ArtworkView.swift */,
 				BFE15B8026F62F5F0096F21F /* ExhibitionsEndpoints.swift */,
 				BF3D241B26F3468500F8BE6E /* ExhibitionsView.swift */,
+				BFE15B8426F6339F0096F21F /* ExhibitionCardView.swift */,
 				BF9C244C26F35A6D00730E5E /* GalleryView.swift */,
 				BF3D241D26F3468600F8BE6E /* Assets.xcassets */,
 				BF3D242226F3468600F8BE6E /* Info.plist */,
@@ -176,6 +179,7 @@
 				BF3D241C26F3468500F8BE6E /* ExhibitionsView.swift in Sources */,
 				BFE15B8126F62F5F0096F21F /* ExhibitionsEndpoints.swift in Sources */,
 				BFE15B8326F632840096F21F /* ArtworkView.swift in Sources */,
+				BFE15B8526F6339F0096F21F /* ExhibitionCardView.swift in Sources */,
 				BF9C244D26F35A6D00730E5E /* GalleryView.swift in Sources */,
 				BFE15B7F26F62E860096F21F /* MuseumGuideModels.swift in Sources */,
 				BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */,

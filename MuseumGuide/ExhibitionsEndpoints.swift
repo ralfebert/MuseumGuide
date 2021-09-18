@@ -8,7 +8,6 @@ struct Exhibition: Identifiable, Codable {
 }
 
 struct ExhibitionsEndpoints {
-    let baseURL = URL(string: "https://www.ralfebert.de/examples/")!
     let urlSession: URLSession
     let decoder = JSONDecoder()
 
@@ -20,7 +19,7 @@ struct ExhibitionsEndpoints {
         try await self.request(
             URLRequest(
                 method: .get,
-                url: self.baseURL.appendingPathComponent("exhibitions.json")
+                url: URL(string: "https://www.ralfebert.de/examples/exhibitions.json")!
             ),
             type: [Exhibition].self
         )
