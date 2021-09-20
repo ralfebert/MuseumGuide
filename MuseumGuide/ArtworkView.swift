@@ -2,7 +2,7 @@ import AsyncModel
 import SwiftUI
 
 struct ArtworkView: View {
-    @StateObject var artworkModel: ArtworkModel
+    @ObservedObject var artworkModel: ArtworkModel
 
     var body: some View {
         ZStack {
