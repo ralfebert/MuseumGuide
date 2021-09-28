@@ -6,7 +6,7 @@ struct RandomArtworkView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            AsyncResultView(result: randomArtworkModel.result) { artwork in
+            AsyncModelView(model: randomArtworkModel) { artwork in
                 VStack(alignment: .leading) {
                     if let artworkImageUrl = artwork.primaryImageSmallURL {
                         AsyncImage(
@@ -35,8 +35,5 @@ struct RandomArtworkView: View {
             .buttonStyle(.bordered)
         }
         .padding()
-        .task {
-            await self.randomArtworkModel.loadIfNeeded()
-        }
     }
 }
