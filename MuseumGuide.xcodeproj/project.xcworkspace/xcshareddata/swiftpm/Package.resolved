@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "AsyncModel",
+        "repositoryURL": "https://github.com/ralfebert/AsyncModel.git",
+        "state": {
+          "branch": null,
+          "revision": "5b6098c552d13188fe01d60d846ca435c5067f99",
+          "version": "0.0.2"
+        }
+      },
+      {
+        "package": "MetMuseumEndpoints",
+        "repositoryURL": "https://github.com/ralfebert/MetMuseumEndpoints",
+        "state": {
+          "branch": null,
+          "revision": "f53f4eee195982173c28172d1166e49c0c6ef069",
+          "version": "0.0.2"
+        }
+      },
+      {
         "package": "SweetURLRequest",
         "repositoryURL": "https://github.com/ralfebert/SweetURLRequest.git",
         "state": {
-          "branch": "master",
-          "revision": "cb01ba8ca24216032933545218333d63c25fc627",
-          "version": null
+          "branch": null,
+          "revision": "68b67b9eec051a729431e442571abcc2c54d3838",
+          "version": "0.1.14"
         }
       }
     ]

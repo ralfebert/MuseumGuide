@@ -1,3 +1,4 @@
+import AsyncModel
 import SwiftUI
 
 struct RandomArtworkView: View {
@@ -5,7 +6,7 @@ struct RandomArtworkView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            AsyncResultView(result: randomArtworkModel.artworkResult) { artwork in
+            AsyncResultView(result: randomArtworkModel.result) { artwork in
                 VStack(alignment: .leading) {
                     if let artworkImageUrl = artwork.primaryImageSmallURL {
                         AsyncImage(
@@ -28,14 +29,14 @@ struct RandomArtworkView: View {
 
             Button("Next", role: nil) {
                 Task {
-                    await self.randomArtworkModel.reload()
+                    await self.randomArtworkModel.load()
                 }
             }
             .buttonStyle(.bordered)
         }
         .padding()
         .task {
-            await self.randomArtworkModel.reload()
+            await self.randomArtworkModel.loadIfNeeded()
         }
     }
 }
