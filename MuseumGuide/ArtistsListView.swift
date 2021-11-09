@@ -1,8 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let artists = Artist.all
+
     var body: some View {
-        Text("Hello world!")
+        List(artists) { artist in
+            Text(artist.name)
+        }
     }
 }
 

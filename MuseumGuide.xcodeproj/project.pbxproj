@@ -3,31 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF11E1FD26F34B3A00CA71EC /* Exhibition+ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */; };
-		BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E1FE26F34C5200CA71EC /* Exhibition.swift */; };
-		BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */; };
-		BF3D241C26F3468500F8BE6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D241B26F3468500F8BE6E /* ContentView.swift */; };
-		BF3D241E26F3468600F8BE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D241D26F3468600F8BE6E /* Assets.xcassets */; };
-		BF3D242126F3468600F8BE6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */; };
+		BF771308273AF374000E9134 /* MuseumGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771307273AF374000E9134 /* MuseumGuideApp.swift */; };
+		BF77130A273AF374000E9134 /* ArtistsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771309273AF374000E9134 /* ArtistsListView.swift */; };
+		BF77130C273AF375000E9134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF77130B273AF375000E9134 /* Assets.xcassets */; };
+		BF77130F273AF375000E9134 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF77130E273AF375000E9134 /* Preview Assets.xcassets */; };
+		BF771316273AF380000E9134 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771315273AF380000E9134 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exhibition+ExampleData.swift"; sourceTree = "<group>"; };
-		BF11E1FE26F34C5200CA71EC /* Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exhibition.swift; sourceTree = "<group>"; };
-		BF3D241626F3468500F8BE6E /* MuseumGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumGuideApp.swift; sourceTree = "<group>"; };
-		BF3D241B26F3468500F8BE6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BF3D241D26F3468600F8BE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BF3D242226F3468600F8BE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF771304273AF374000E9134 /* MuseumGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF771307273AF374000E9134 /* MuseumGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumGuideApp.swift; sourceTree = "<group>"; };
+		BF771309273AF374000E9134 /* ArtistsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListView.swift; sourceTree = "<group>"; };
+		BF77130B273AF375000E9134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF77130E273AF375000E9134 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF771315273AF380000E9134 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF3D241326F3468500F8BE6E /* Frameworks */ = {
+		BF771301273AF374000E9134 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,40 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF3D240D26F3468500F8BE6E = {
+		BF7712FB273AF374000E9134 = {
 			isa = PBXGroup;
 			children = (
-				BF3D241826F3468500F8BE6E /* MuseumGuide */,
-				BF3D241726F3468500F8BE6E /* Products */,
+				BF771306273AF374000E9134 /* MuseumGuide */,
+				BF771305273AF374000E9134 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BF3D241726F3468500F8BE6E /* Products */ = {
+		BF771305273AF374000E9134 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF3D241626F3468500F8BE6E /* MuseumGuide.app */,
+				BF771304273AF374000E9134 /* MuseumGuide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF3D241826F3468500F8BE6E /* MuseumGuide */ = {
+		BF771306273AF374000E9134 /* MuseumGuide */ = {
 			isa = PBXGroup;
 			children = (
-				BF3D241926F3468500F8BE6E /* MuseumGuideApp.swift */,
-				BF3D241B26F3468500F8BE6E /* ContentView.swift */,
-				BF11E1FE26F34C5200CA71EC /* Exhibition.swift */,
-				BF3D241D26F3468600F8BE6E /* Assets.xcassets */,
-				BF3D242226F3468600F8BE6E /* Info.plist */,
-				BF3D241F26F3468600F8BE6E /* Preview Content */,
+				BF771307273AF374000E9134 /* MuseumGuideApp.swift */,
+				BF771309273AF374000E9134 /* ArtistsListView.swift */,
+				BF77130B273AF375000E9134 /* Assets.xcassets */,
+				BF77130D273AF375000E9134 /* Preview Content */,
+				BF771315273AF380000E9134 /* Artist.swift */,
 			);
 			path = MuseumGuide;
 			sourceTree = "<group>";
 		};
-		BF3D241F26F3468600F8BE6E /* Preview Content */ = {
+		BF77130D273AF375000E9134 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BF3D242026F3468600F8BE6E /* Preview Assets.xcassets */,
-				BF11E1FC26F34B3A00CA71EC /* Exhibition+ExampleData.swift */,
+				BF77130E273AF375000E9134 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -78,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF3D241526F3468500F8BE6E /* MuseumGuide */ = {
+		BF771303273AF374000E9134 /* MuseumGuide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF3D242526F3468600F8BE6E /* Build configuration list for PBXNativeTarget "MuseumGuide" */;
+			buildConfigurationList = BF771312273AF375000E9134 /* Build configuration list for PBXNativeTarget "MuseumGuide" */;
 			buildPhases = (
-				BF3D241226F3468500F8BE6E /* Sources */,
-				BF3D241326F3468500F8BE6E /* Frameworks */,
-				BF3D241426F3468500F8BE6E /* Resources */,
+				BF771300273AF374000E9134 /* Sources */,
+				BF771301273AF374000E9134 /* Frameworks */,
+				BF771302273AF374000E9134 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -92,75 +87,75 @@
 			);
 			name = MuseumGuide;
 			productName = MuseumGuide;
-			productReference = BF3D241626F3468500F8BE6E /* MuseumGuide.app */;
+			productReference = BF771304273AF374000E9134 /* MuseumGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BF3D240E26F3468500F8BE6E /* Project object */ = {
+		BF7712FC273AF374000E9134 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					BF3D241526F3468500F8BE6E = {
-						CreatedOnToolsVersion = 12.5.1;
+					BF771303273AF374000E9134 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = BF3D241126F3468500F8BE6E /* Build configuration list for PBXProject "MuseumGuide" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = BF7712FF273AF374000E9134 /* Build configuration list for PBXProject "MuseumGuide" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = BF3D240D26F3468500F8BE6E;
-			productRefGroup = BF3D241726F3468500F8BE6E /* Products */;
+			mainGroup = BF7712FB273AF374000E9134;
+			productRefGroup = BF771305273AF374000E9134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF3D241526F3468500F8BE6E /* MuseumGuide */,
+				BF771303273AF374000E9134 /* MuseumGuide */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BF3D241426F3468500F8BE6E /* Resources */ = {
+		BF771302273AF374000E9134 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3D242126F3468600F8BE6E /* Preview Assets.xcassets in Resources */,
-				BF3D241E26F3468600F8BE6E /* Assets.xcassets in Resources */,
+				BF77130F273AF375000E9134 /* Preview Assets.xcassets in Resources */,
+				BF77130C273AF375000E9134 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BF3D241226F3468500F8BE6E /* Sources */ = {
+		BF771300273AF374000E9134 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3D241C26F3468500F8BE6E /* ContentView.swift in Sources */,
-				BF11E1FD26F34B3A00CA71EC /* Exhibition+ExampleData.swift in Sources */,
-				BF11E1FF26F34C5200CA71EC /* Exhibition.swift in Sources */,
-				BF3D241A26F3468500F8BE6E /* MuseumGuideApp.swift in Sources */,
+				BF771316273AF380000E9134 /* Artist.swift in Sources */,
+				BF77130A273AF374000E9134 /* ArtistsListView.swift in Sources */,
+				BF771308273AF374000E9134 /* MuseumGuideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BF3D242326F3468600F8BE6E /* Debug */ = {
+		BF771310273AF375000E9134 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -205,7 +200,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -215,13 +210,13 @@
 			};
 			name = Debug;
 		};
-		BF3D242426F3468600F8BE6E /* Release */ = {
+		BF771311273AF375000E9134 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -260,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,43 +265,57 @@
 			};
 			name = Release;
 		};
-		BF3D242626F3468600F8BE6E /* Debug */ = {
+		BF771313273AF375000E9134 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MuseumGuide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MuseumGuide/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuseumGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BF3D242726F3468600F8BE6E /* Release */ = {
+		BF771314273AF375000E9134 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MuseumGuide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MuseumGuide/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuseumGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,25 +324,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF3D241126F3468500F8BE6E /* Build configuration list for PBXProject "MuseumGuide" */ = {
+		BF7712FF273AF374000E9134 /* Build configuration list for PBXProject "MuseumGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF3D242326F3468600F8BE6E /* Debug */,
-				BF3D242426F3468600F8BE6E /* Release */,
+				BF771310273AF375000E9134 /* Debug */,
+				BF771311273AF375000E9134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF3D242526F3468600F8BE6E /* Build configuration list for PBXNativeTarget "MuseumGuide" */ = {
+		BF771312273AF375000E9134 /* Build configuration list for PBXNativeTarget "MuseumGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF3D242626F3468600F8BE6E /* Debug */,
-				BF3D242726F3468600F8BE6E /* Release */,
+				BF771313273AF375000E9134 /* Debug */,
+				BF771314273AF375000E9134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BF3D240E26F3468500F8BE6E /* Project object */;
+	rootObject = BF7712FC273AF374000E9134 /* Project object */;
 }
