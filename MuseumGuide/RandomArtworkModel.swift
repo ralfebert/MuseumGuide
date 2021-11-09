@@ -6,16 +6,20 @@ struct NoImageAvailableError: Error {}
 
 @MainActor
 class RandomArtworkModel: AsyncModel<Artwork> {
+    let searchText: String
+    let endpoints = MetMuseumEndpoints()
+
     init(searchText: String) {
-        super.init {
-            let endpoints = MetMuseumEndpoints()
-            let artworksSearchResult = try await endpoints.search(query: searchText)
+        self.searchText = searchText
+    }
 
-            guard let randomObjectId = artworksSearchResult.objectIDs.randomElement() else {
-                throw NoImageAvailableError()
-            }
+    override func asyncOperation() async throws -> Artwork {
+        let artworksSearchResult = try await endpoints.search(query: searchText)
 
-            return try await endpoints.artwork(id: randomObjectId)
+        guard let randomObjectId = artworksSearchResult.objectIDs.randomElement() else {
+            throw NoImageAvailableError()
         }
+
+        return try await endpoints.artwork(id: randomObjectId)
     }
 }

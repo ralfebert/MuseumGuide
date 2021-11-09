@@ -24,14 +24,15 @@ struct RandomArtworkView: View {
                     Text(artwork.title)
                         .bold()
                     Text(artwork.artistDisplayName + ", " + artwork.objectDate)
+
+                    Button("Next", role: nil) {
+                        Task {
+                            await self.randomArtworkModel.load()
+                        }
+                    }
                 }
             }
 
-            Button("Next", role: nil) {
-                Task {
-                    await self.randomArtworkModel.load()
-                }
-            }
             .buttonStyle(.bordered)
         }
         .padding()
