@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ArtistsListView: View {
     let artists = Artist.all
 
     var body: some View {
@@ -10,8 +10,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ArtistsListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ArtistsListView()
     }
 }
