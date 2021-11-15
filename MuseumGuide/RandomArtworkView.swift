@@ -1,8 +1,9 @@
-import AsyncModel
+import AsyncView
+import MetMuseumEndpoints
 import SwiftUI
 
 struct RandomArtworkView: View {
-    @StateObject var randomArtworkModel = RandomArtworkModel(searchText: "van gogh")
+    @StateObject var randomArtworkModel = AsyncModel { try await MetMuseumEndpoints().randomArtwork(searchText: "van gogh") }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -30,10 +31,9 @@ struct RandomArtworkView: View {
                             await self.randomArtworkModel.load()
                         }
                     }
+                    .buttonStyle(.bordered)
                 }
             }
-
-            .buttonStyle(.bordered)
         }
         .padding()
     }

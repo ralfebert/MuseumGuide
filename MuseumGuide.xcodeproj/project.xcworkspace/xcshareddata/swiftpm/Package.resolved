@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "AsyncModel",
-        "repositoryURL": "https://github.com/ralfebert/AsyncModel.git",
+        "package": "AsyncView",
+        "repositoryURL": "https://github.com/ralfebert/AsyncView",
         "state": {
           "branch": null,
-          "revision": "7dd12ab39d248dd08d635f64798a8fcf1dfd69e8",
-          "version": "0.0.4"
+          "revision": "65b7cfb72a52b07f8371737bf3df2447655a54a0",
+          "version": "0.0.12"
         }
       },
       {

@@ -11,10 +11,10 @@
 		BF4C3A7F26A2CE2A00EECBA3 /* RandomArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C3A7E26A2CE2A00EECBA3 /* RandomArtworkView.swift */; };
 		BF4C3A8126A2CE2B00EECBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4C3A8026A2CE2B00EECBA3 /* Assets.xcassets */; };
 		BF4C3A8426A2CE2B00EECBA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4C3A8326A2CE2B00EECBA3 /* Preview Assets.xcassets */; };
-		BF4C3A9426A2F25500EECBA3 /* RandomArtworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C3A9326A2F25500EECBA3 /* RandomArtworkModel.swift */; };
+		BF4C3A9426A2F25500EECBA3 /* MetMuseumEndpoints+RandomArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C3A9326A2F25500EECBA3 /* MetMuseumEndpoints+RandomArtwork.swift */; };
 		BF4C3A9626A30E7300EECBA3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF4C3A9526A30E7300EECBA3 /* README.md */; };
-		BF5843AA2703C6200025FF5E /* AsyncModel in Frameworks */ = {isa = PBXBuildFile; productRef = BF5843A92703C6200025FF5E /* AsyncModel */; };
 		BF5843AD2703C6450025FF5E /* MetMuseumEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = BF5843AC2703C6450025FF5E /* MetMuseumEndpoints */; };
+		BFE5AA722742FB7C006EBED5 /* AsyncView in Frameworks */ = {isa = PBXBuildFile; productRef = BFE5AA712742FB7C006EBED5 /* AsyncView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		BF4C3A7E26A2CE2A00EECBA3 /* RandomArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomArtworkView.swift; sourceTree = "<group>"; };
 		BF4C3A8026A2CE2B00EECBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4C3A8326A2CE2B00EECBA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BF4C3A9326A2F25500EECBA3 /* RandomArtworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomArtworkModel.swift; sourceTree = "<group>"; };
+		BF4C3A9326A2F25500EECBA3 /* MetMuseumEndpoints+RandomArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetMuseumEndpoints+RandomArtwork.swift"; sourceTree = "<group>"; };
 		BF4C3A9526A30E7300EECBA3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5843AA2703C6200025FF5E /* AsyncModel in Frameworks */,
+				BFE5AA722742FB7C006EBED5 /* AsyncView in Frameworks */,
 				BF5843AD2703C6450025FF5E /* MetMuseumEndpoints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 			children = (
 				BF4C3A7C26A2CE2A00EECBA3 /* MuseumGuideApp.swift */,
 				BF4C3A7E26A2CE2A00EECBA3 /* RandomArtworkView.swift */,
-				BF4C3A9326A2F25500EECBA3 /* RandomArtworkModel.swift */,
+				BF4C3A9326A2F25500EECBA3 /* MetMuseumEndpoints+RandomArtwork.swift */,
 				BF4C3A8026A2CE2B00EECBA3 /* Assets.xcassets */,
 				BF4C3A8226A2CE2B00EECBA3 /* Preview Content */,
 			);
@@ -94,8 +94,8 @@
 			);
 			name = MuseumGuide;
 			packageProductDependencies = (
-				BF5843A92703C6200025FF5E /* AsyncModel */,
 				BF5843AC2703C6450025FF5E /* MetMuseumEndpoints */,
+				BFE5AA712742FB7C006EBED5 /* AsyncView */,
 			);
 			productName = MuseumGuide;
 			productReference = BF4C3A7926A2CE2A00EECBA3 /* MuseumGuide.app */;
@@ -126,8 +126,8 @@
 			);
 			mainGroup = BF4C3A7026A2CE2A00EECBA3;
 			packageReferences = (
-				BF5843A82703C6200025FF5E /* XCRemoteSwiftPackageReference "AsyncModel" */,
 				BF5843AB2703C6450025FF5E /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */,
+				BFE5AA702742FB7C006EBED5 /* XCRemoteSwiftPackageReference "AsyncView" */,
 			);
 			productRefGroup = BF4C3A7A26A2CE2A00EECBA3 /* Products */;
 			projectDirPath = "";
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4C3A7F26A2CE2A00EECBA3 /* RandomArtworkView.swift in Sources */,
-				BF4C3A9426A2F25500EECBA3 /* RandomArtworkModel.swift in Sources */,
+				BF4C3A9426A2F25500EECBA3 /* MetMuseumEndpoints+RandomArtwork.swift in Sources */,
 				BF4C3A7D26A2CE2A00EECBA3 /* MuseumGuideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,14 +362,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BF5843A82703C6200025FF5E /* XCRemoteSwiftPackageReference "AsyncModel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ralfebert/AsyncModel.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.2;
-			};
-		};
 		BF5843AB2703C6450025FF5E /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ralfebert/MetMuseumEndpoints";
@@ -378,18 +370,26 @@
 				minimumVersion = 0.0.2;
 			};
 		};
+		BFE5AA702742FB7C006EBED5 /* XCRemoteSwiftPackageReference "AsyncView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ralfebert/AsyncView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BF5843A92703C6200025FF5E /* AsyncModel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BF5843A82703C6200025FF5E /* XCRemoteSwiftPackageReference "AsyncModel" */;
-			productName = AsyncModel;
-		};
 		BF5843AC2703C6450025FF5E /* MetMuseumEndpoints */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BF5843AB2703C6450025FF5E /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */;
 			productName = MetMuseumEndpoints;
+		};
+		BFE5AA712742FB7C006EBED5 /* AsyncView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFE5AA702742FB7C006EBED5 /* XCRemoteSwiftPackageReference "AsyncView" */;
+			productName = AsyncView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
