@@ -6,7 +6,7 @@ struct RandomArtworkView: View {
     @StateObject var randomArtworkModel = AsyncModel { try await MetMuseumEndpoints().randomArtwork(searchText: "van gogh") }
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(alignment: .center, spacing: 20) {
             AsyncModelView(model: randomArtworkModel) { artwork in
                 VStack(alignment: .leading) {
                     if let artworkImageUrl = artwork.primaryImageSmallURL {
@@ -19,21 +19,25 @@ struct RandomArtworkView: View {
                             },
                             placeholder: {
                                 ProgressView()
+                                    .frame(maxWidth: .infinity)
                             }
                         )
                     }
-                    Text(artwork.title)
-                        .bold()
-                    Text(artwork.artistDisplayName + ", " + artwork.objectDate)
-
-                    Button("Next", role: nil) {
-                        Task {
-                            await self.randomArtworkModel.load()
-                        }
-                    }
-                    .buttonStyle(.bordered)
+                    Text(
+                        """
+                        **\(artwork.title)**
+                        \(artwork.artistDisplayName), \(artwork.objectDate)
+                        """
+                    )
                 }
             }
+
+            Button("Next", role: nil) {
+                Task {
+                    await self.randomArtworkModel.load()
+                }
+            }
+            .buttonStyle(.bordered)
         }
         .padding()
     }
