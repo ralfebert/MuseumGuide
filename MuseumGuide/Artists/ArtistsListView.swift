@@ -5,7 +5,7 @@ struct ArtistsListView: View {
 
     var body: some View {
         List(artists) { artist in
-            Text(artist.name)
+            ArtistCardView(artist: artist)
         }
     }
 }

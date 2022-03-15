@@ -1,0 +1,17 @@
+[
+  {
+    "id" : 1,
+    "name" : "Vincent van Gogh",
+    "previewImageUrl" : "https:\/\/images.metmuseum.org\/CRDImages\/ep\/web-large\/DT1567.jpg"
+  },
+  {
+    "id" : 2,
+    "name" : "Auguste Renoir",
+    "previewImageUrl" : "https:\/\/images.metmuseum.org\/CRDImages\/rl\/web-large\/DT3304.jpg"
+  },
+  {
+    "id" : 3,
+    "name" : "Paul Cézanne",
+    "previewImageUrl" : "https:\/\/images.metmuseum.org\/CRDImages\/ep\/web-large\/DT1029.jpg"
+  }
+]

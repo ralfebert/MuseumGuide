@@ -12,6 +12,8 @@
 		BF77130C273AF375000E9134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF77130B273AF375000E9134 /* Assets.xcassets */; };
 		BF77130F273AF375000E9134 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF77130E273AF375000E9134 /* Preview Assets.xcassets */; };
 		BF771316273AF380000E9134 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771315273AF380000E9134 /* Artist.swift */; };
+		BFF2EB8327E085B4001C91EF /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF2EB8227E085B4001C91EF /* artists.json */; };
+		BFF2EBA827E0B73D001C91EF /* ArtistCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2EBA727E0B73D001C91EF /* ArtistCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		BF77130B273AF375000E9134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF77130E273AF375000E9134 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF771315273AF380000E9134 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		BFF2EB8227E085B4001C91EF /* artists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		BFF2EBA727E0B73D001C91EF /* ArtistCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				BF771307273AF374000E9134 /* MuseumGuideApp.swift */,
-				BF771309273AF374000E9134 /* ArtistsListView.swift */,
 				BF77130B273AF375000E9134 /* Assets.xcassets */,
 				BF77130D273AF375000E9134 /* Preview Content */,
-				BF771315273AF380000E9134 /* Artist.swift */,
+				BFF2EBA627E0B6F6001C91EF /* Artists */,
 			);
 			path = MuseumGuide;
 			sourceTree = "<group>";
@@ -68,6 +71,17 @@
 				BF77130E273AF375000E9134 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFF2EBA627E0B6F6001C91EF /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				BF771309273AF374000E9134 /* ArtistsListView.swift */,
+				BFF2EBA727E0B73D001C91EF /* ArtistCardView.swift */,
+				BF771315273AF380000E9134 /* Artist.swift */,
+				BFF2EB8227E085B4001C91EF /* artists.json */,
+			);
+			path = Artists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF77130F273AF375000E9134 /* Preview Assets.xcassets in Resources */,
+				BFF2EB8327E085B4001C91EF /* artists.json in Resources */,
 				BF77130C273AF375000E9134 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +158,7 @@
 				BF771316273AF380000E9134 /* Artist.swift in Sources */,
 				BF77130A273AF374000E9134 /* ArtistsListView.swift in Sources */,
 				BF771308273AF374000E9134 /* MuseumGuideApp.swift in Sources */,
+				BFF2EBA827E0B73D001C91EF /* ArtistCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
