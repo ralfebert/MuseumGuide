@@ -1,12 +1,10 @@
 import Foundation
 
-public struct Artist: Identifiable, Codable {
+public struct Artist: Identifiable {
     public var id: Int
     public var name: String
     public var previewImageUrl: URL
-}
 
-public extension Artist {
     static let all: [Artist] = [
         Artist(
             id: 1,
