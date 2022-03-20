@@ -7,23 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF4D1D2A273C33DD000DB65B /* MetMuseumEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = BF4D1D29273C33DD000DB65B /* MetMuseumEndpoints */; };
 		BF4D1D37273C349E000DB65B /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D1D33273C349E000DB65B /* ArtistsView.swift */; };
 		BF4D1D38273C349E000DB65B /* ArtistCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D1D34273C349E000DB65B /* ArtistCardView.swift */; };
-		BF4D1D39273C349E000DB65B /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D1D35273C349E000DB65B /* GalleryView.swift */; };
-		BF4D1D3A273C349E000DB65B /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D1D36273C349E000DB65B /* ArtworkView.swift */; };
 		BF771308273AF374000E9134 /* MuseumGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771307273AF374000E9134 /* MuseumGuideApp.swift */; };
 		BF77130C273AF375000E9134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF77130B273AF375000E9134 /* Assets.xcassets */; };
 		BF77130F273AF375000E9134 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF77130E273AF375000E9134 /* Preview Assets.xcassets */; };
-		BFE5AA602742C4CD006EBED5 /* AsyncView in Frameworks */ = {isa = PBXBuildFile; productRef = BFE5AA5F2742C4CD006EBED5 /* AsyncView */; };
 		BFE5AA622742C532006EBED5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5AA612742C532006EBED5 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF4D1D33273C349E000DB65B /* ArtistsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 		BF4D1D34273C349E000DB65B /* ArtistCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCardView.swift; sourceTree = "<group>"; };
-		BF4D1D35273C349E000DB65B /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
-		BF4D1D36273C349E000DB65B /* ArtworkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
 		BF771304273AF374000E9134 /* MuseumGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF771307273AF374000E9134 /* MuseumGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumGuideApp.swift; sourceTree = "<group>"; };
 		BF77130B273AF375000E9134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,8 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE5AA602742C4CD006EBED5 /* AsyncView in Frameworks */,
-				BF4D1D2A273C33DD000DB65B /* MetMuseumEndpoints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +60,6 @@
 				BF77130B273AF375000E9134 /* Assets.xcassets */,
 				BF77130D273AF375000E9134 /* Preview Content */,
 				BFE5AA632742C53B006EBED5 /* Artists */,
-				BFE5AA642742C548006EBED5 /* Gallery */,
 			);
 			path = MuseumGuide;
 			sourceTree = "<group>";
@@ -98,15 +89,6 @@
 			path = Artists;
 			sourceTree = "<group>";
 		};
-		BFE5AA642742C548006EBED5 /* Gallery */ = {
-			isa = PBXGroup;
-			children = (
-				BF4D1D35273C349E000DB65B /* GalleryView.swift */,
-				BF4D1D36273C349E000DB65B /* ArtworkView.swift */,
-			);
-			path = Gallery;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,8 +106,6 @@
 			);
 			name = MuseumGuide;
 			packageProductDependencies = (
-				BF4D1D29273C33DD000DB65B /* MetMuseumEndpoints */,
-				BFE5AA5F2742C4CD006EBED5 /* AsyncView */,
 			);
 			productName = MuseumGuide;
 			productReference = BF771304273AF374000E9134 /* MuseumGuide.app */;
@@ -156,8 +136,6 @@
 			);
 			mainGroup = BF7712FB273AF374000E9134;
 			packageReferences = (
-				BF4D1D28273C33DD000DB65B /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */,
-				BFE5AA5B2742C499006EBED5 /* XCRemoteSwiftPackageReference "AsyncView" */,
 			);
 			productRefGroup = BF771305273AF374000E9134 /* Products */;
 			projectDirPath = "";
@@ -186,10 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF771308273AF374000E9134 /* MuseumGuideApp.swift in Sources */,
-				BF4D1D3A273C349E000DB65B /* ArtworkView.swift in Sources */,
 				BF4D1D37273C349E000DB65B /* ArtistsView.swift in Sources */,
 				BF4D1D38273C349E000DB65B /* ArtistCardView.swift in Sources */,
-				BF4D1D39273C349E000DB65B /* GalleryView.swift in Sources */,
 				BFE5AA622742C532006EBED5 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,38 +369,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BF4D1D28273C33DD000DB65B /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ralfebert/MetMuseumEndpoints/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.2;
-			};
-		};
-		BFE5AA5B2742C499006EBED5 /* XCRemoteSwiftPackageReference "AsyncView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ralfebert/AsyncView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BF4D1D29273C33DD000DB65B /* MetMuseumEndpoints */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BF4D1D28273C33DD000DB65B /* XCRemoteSwiftPackageReference "MetMuseumEndpoints" */;
-			productName = MetMuseumEndpoints;
-		};
-		BFE5AA5F2742C4CD006EBED5 /* AsyncView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BFE5AA5B2742C499006EBED5 /* XCRemoteSwiftPackageReference "AsyncView" */;
-			productName = AsyncView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF7712FC273AF374000E9134 /* Project object */;
 }

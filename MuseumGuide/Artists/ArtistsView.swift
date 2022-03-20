@@ -8,14 +8,7 @@ struct ArtistsView: View {
         ScrollView(.vertical) {
             VStack(spacing: 15) {
                 ForEach(artists) { artist in
-                    NavigationLink(
-                        destination: {
-                            GalleryView(artist: artist)
-                        },
-                        label: {
-                            ArtistCardView(artist: artist)
-                        }
-                    )
+                    ArtistCardView(artist: artist)
                 }
             }
         }
