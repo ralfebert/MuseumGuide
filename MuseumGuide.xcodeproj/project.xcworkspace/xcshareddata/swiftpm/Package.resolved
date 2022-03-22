@@ -1,34 +1,32 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "AsyncView",
-        "repositoryURL": "https://github.com/ralfebert/AsyncView",
-        "state": {
-          "branch": null,
-          "revision": "afd7f732b87d34b7b9b24970747e5c73c4ef3856",
-          "version": "0.5.0"
-        }
-      },
-      {
-        "package": "MetMuseumEndpoints",
-        "repositoryURL": "https://github.com/ralfebert/MetMuseumEndpoints",
-        "state": {
-          "branch": null,
-          "revision": "f53f4eee195982173c28172d1166e49c0c6ef069",
-          "version": "0.0.2"
-        }
-      },
-      {
-        "package": "SweetURLRequest",
-        "repositoryURL": "https://github.com/ralfebert/SweetURLRequest.git",
-        "state": {
-          "branch": null,
-          "revision": "68b67b9eec051a729431e442571abcc2c54d3838",
-          "version": "0.1.14"
-        }
+  "pins" : [
+    {
+      "identity" : "asyncview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ralfebert/AsyncView",
+      "state" : {
+        "revision" : "62905b5289b766911c4d464517dce64b3b973100",
+        "version" : "0.5.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "metmuseumendpoints",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ralfebert/MetMuseumEndpoints",
+      "state" : {
+        "revision" : "12861d7038fceccec8d066fb23dedd307f3808b5",
+        "version" : "0.0.3"
+      }
+    },
+    {
+      "identity" : "sweeturlrequest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ralfebert/SweetURLRequest.git",
+      "state" : {
+        "revision" : "68b67b9eec051a729431e442571abcc2c54d3838",
+        "version" : "0.1.14"
+      }
+    }
+  ],
+  "version" : 2
 }

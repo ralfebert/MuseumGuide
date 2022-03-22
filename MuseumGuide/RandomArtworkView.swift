@@ -3,7 +3,7 @@ import MetMuseumEndpoints
 import SwiftUI
 
 struct RandomArtworkView: View {
-    @StateObject var randomArtworkModel = AsyncModel { try await MetMuseumEndpoints().randomArtwork(searchText: "van gogh") }
+    @StateObject var randomArtworkModel = AsyncModel { try await MetMuseumEndpoints.shared.randomArtwork(searchText: "van gogh") }
 
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
@@ -37,7 +37,7 @@ struct RandomArtworkView: View {
                     await self.randomArtworkModel.load()
                 }
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.borderedProminent)
         }
         .padding()
     }
