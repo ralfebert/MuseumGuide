@@ -27,18 +27,15 @@ struct ArtworkView: View {
                         )
                     }
 
-                    VStack(alignment: .leading) {
-                        Text(
-                            """
-                            **\(artwork.title)**
-                            \(artwork.artistDisplayName), \(artwork.objectDate)
-                            """
-                        )
-                    }
+                    Text(
+                        """
+                        **\(artwork.title)**
+                        \(artwork.artistDisplayName), \(artwork.objectDate)
+                        """
+                    )
                 }
             }
         )
-        .edgesIgnoringSafeArea(.top)
         .padding()
     }
 }

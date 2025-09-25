@@ -6,7 +6,7 @@ struct ArtistsView: View {
 
     var body: some View {
         ScrollView(.vertical) {
-            VStack(spacing: 15) {
+            LazyVStack(spacing: 16) {
                 ForEach(artists) { artist in
                     NavigationLink(
                         destination: {
